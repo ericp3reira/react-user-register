@@ -6,34 +6,34 @@ class App extends Component {
   render() {
     const users = [
       {
-        name: 'first user',
-        img: '3237539kfnehf398h.png',
-        createdAt: Date.now(),
+        name: 'first user feauhfieah ifhauhfa',
+        img: 'FU',
+        createdAt: '9 Jan, 2018, 10:32',
       },
       {
         name: 'second user',
-        img: '938thfnsgu3g0.png',
-        createdAt: Date.now(),
+        img: 'SU',
+        createdAt: '9 Jan, 2018, 10:32',
       },
       {
         name: 'third user',
-        img: '3092uifnlksg03.png',
-        createdAt: Date.now(),
+        img: 'TU',
+        createdAt: '9 Jan, 2018, 10:32',
       },
       {
         name: 'fourth user',
-        img: '30ugnslkgmsp.png',
-        createdAt: Date.now(),
+        img: '4U',
+        createdAt: '9 Jan, 2018, 10:32',
       },
     ];
     const usersLi = users.map((user, index) => {
       return (
         <li key={index}>
-          <div>
-            <span>{user.img}</span>
-            <span>{user.name}</span>
+          <div className="Users-list-name">
+            <span className="Users-list-img">{user.img}</span>
+            {user.name}
           </div>
-          <div>
+          <div className="Users-list-date">
             {user.createdAt}
           </div>
         </li>
@@ -48,13 +48,13 @@ class App extends Component {
           <div className="App-content">
             <section className="Content-header">
               <h1 className="Content-title">Users</h1>
-              <input type="button" className="Content-add-user-btn" value="Add new user"/>
+              <input type="button" className="Content-btn" value="Add new user"/>
             </section>
-            <section>
-              <ul>
-                <li>
+            <section className="Content-main">
+              <ul className="Users-list">
+                <li className="list-header">
                   <div>Full Name</div>
-                  <div>Created at</div>
+                  <div className="Users-list-date">Created at <span className="sort-icon">&#x25BC;</span></div>
                 </li>
                 {usersLi}
               </ul>

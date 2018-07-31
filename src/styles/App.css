@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
 * {
   box-sizing: border-box;
@@ -34,6 +34,7 @@
 
 .App-content {
   width: 90%;
+  max-width: 680px;
   margin: 0 auto;
   padding: 10% 0;
 }
@@ -51,12 +52,65 @@
   color: #4a4a4a;
 }
 
-.Content-add-user-btn {
+.Content-btn {
   background-color: #12c1c7;
   color: #ffffff;
-  border-color: #0e9a9f;
-  border-radius: 4px;
-  padding: 12px 18px;
+  border: 0;
+  border-bottom: 2px solid #0e9a9f;
+  border-radius: 3px;
+  padding: 11px 18px;
   font-weight: bold;
   font-size: 0.9em;
+}
+
+.Content-main {
+  margin-top: 10%;
+}
+
+.Users-list > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 2px solid #ebebeb;
+  color: #555e5e;
+  font-size: 0.9em;
+}
+
+.Users-list > .list-header {
+  padding-top: 0;
+}
+
+.list-header > div {
+  color: #0e9a9f;
+  font-weight: bold;
+}
+
+.Users-list-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 15px 0 0;
+  background-color: #d8d8d8;
+  padding-top: 12px;
+  font-weight: bold;
+}
+
+.Users-list-name {
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.Users-list-date {
+  width: 140px;
+  margin-left: 10px;
+  text-align: left;
+  color: #868c8c;
+}
+
+.sort-icon {
+  color: #9b9b9b;
+  font-size: 0.7em;
 }
