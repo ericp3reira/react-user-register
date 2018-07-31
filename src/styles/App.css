@@ -37,3 +37,26 @@
   margin: 0 auto;
   padding: 10% 0;
 }
+
+.Content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Content-title {
+  display: inline-block;
+  font-weight: lighter;
+  font-size: 3em;
+  color: #4a4a4a;
+}
+
+.Content-add-user-btn {
+  background-color: #12c1c7;
+  color: #ffffff;
+  border-color: #0e9a9f;
+  border-radius: 4px;
+  padding: 12px 18px;
+  font-weight: bold;
+  font-size: 0.9em;
+}

@@ -26,9 +26,9 @@ class App extends Component {
         createdAt: Date.now(),
       },
     ];
-    const usersLi = users.map((user) => {
+    const usersLi = users.map((user, index) => {
       return (
-        <li>
+        <li key={index}>
           <div>
             <span>{user.img}</span>
             <span>{user.name}</span>
@@ -46,9 +46,9 @@ class App extends Component {
         </header>
         <main className="App-main">
           <div className="App-content">
-            <section>
-              <h1>Users</h1>
-              <button>Add new users</button>
+            <section className="Content-header">
+              <h1 className="Content-title">Users</h1>
+              <input type="button" className="Content-add-user-btn" value="Add new user"/>
             </section>
             <section>
               <ul>
