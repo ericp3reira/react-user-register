@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import UserInfo from './UserInfo';
 
 class UsersList extends Component {
@@ -38,7 +40,9 @@ class UsersList extends Component {
       <div>
         <section className="Content-header">
           <h1 className="Content-title">Users</h1>
-          <input type="button" className="Content-btn" value="Add new user"/>
+          <Link to='/user/register'>
+            <input type="button" className="Content-btn" value="Add new user"/>
+          </Link>
         </section>
         <section className="Content-main">
           <ul className="Users-list">
