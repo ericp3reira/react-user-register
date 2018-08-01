@@ -37,7 +37,7 @@ class UsersList extends Component {
       );
     });
     return (
-      <div>
+      <div className="App-content">
         <section className="Content-header">
           <h1 className="Content-title">Users</h1>
           <Link to='/user/register'>
