@@ -34,9 +34,9 @@
 
 .App-content {
   width: 90%;
-  max-width: 680px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 10% 0;
+  padding: 5% 0 10% 0;
 }
 
 .Content-header {
