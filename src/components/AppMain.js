@@ -10,8 +10,8 @@ class AppMain extends Component {
         <Switch>
           <Route exact path='/' component={UsersList} />
           <Route exact path='/users' component={UsersList} />
-          <Route path='/register' component={UserRegister} />
-          {/* <Route path='/user/:id' component={UserDetails} /> */}
+          <Route path='/users/new/' component={UserRegister} />
+          {/* <Route path='/users/:id' component={UserDetails} /> */}
         </Switch>
       </main>
     );

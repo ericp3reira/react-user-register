@@ -40,7 +40,7 @@ class UsersList extends Component {
       <div className="App-content">
         <section className="Content-header">
           <h1 className="Content-title">Users</h1>
-          <Link to='/register'>
+          <Link to='/users/new/1'>
             <input type="button" className="Content-btn" value="Add new user"/>
           </Link>
         </section>

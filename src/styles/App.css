@@ -199,3 +199,17 @@ a {
 .form-input::placeholder {
   color: #c4c4c4;
 }
+
+.form-btn {
+  background-color: #30cf94;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 25px;
+  font-size: 1em;
+}
+
+.form-btn > span {
+  margin-left: 10px;
+  margin-bottom: 2px; 
+}
