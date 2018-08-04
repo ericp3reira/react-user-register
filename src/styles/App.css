@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -36,7 +40,7 @@
   width: 90%;
   max-width: 760px;
   margin: 0 auto;
-  padding: 5% 0 10% 0;
+  padding: 10% 0;
 }
 
 .Content-header {
@@ -64,7 +68,7 @@
 }
 
 .Content-main {
-  margin-top: 18%;
+  margin-top: 9%;
 }
 
 .Users-list > li {
