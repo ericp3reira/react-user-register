@@ -5,12 +5,17 @@ import UserRegisterData from './UserRegisterData';
 import UserRegisterImg from './UserRegisterImg';
 
 class UserRegister extends Component {
+  constructor({match}, props) {
+    super();
+    this.match = match;
+  }
+
   render() {
     return (
       <div className="App-content Register">
         <Switch>
-          <Route exact path='/users/new/1' component={UserRegisterData} />
-          <Route exact path='/users/new/2' component={UserRegisterImg} />
+          <Route path={`${this.match.url}/1`} component={UserRegisterData} />
+          <Route path={`${this.match.url}/2`} component={UserRegisterImg} />
         </Switch>
       </div>
     );

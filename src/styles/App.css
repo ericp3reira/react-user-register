@@ -49,6 +49,10 @@ a {
   align-items: center;
 }
 
+.Content-header.register-img-title {
+  justify-content: center;
+}
+
 .Content-title {
   display: inline-block;
   font-weight: lighter;
@@ -174,6 +178,31 @@ a {
   width: 46%;
 }
 
+.Register-img {
+  height: 180px;
+  width: 180px;
+  margin: 60px auto;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  display: flex;
+  align-items: center;
+}
+
+.Register-img > span {
+  display: block;
+  width: 100%;
+  padding: 10%;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #6a6a6a;
+}
+
+.Register-img-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .form-label {
   font-size: 0.8em;
   display: block;
@@ -201,15 +230,22 @@ a {
 }
 
 .form-btn {
+  width: 150px;
   background-color: #30cf94;
   color: #ffffff;
   border: none;
   border-radius: 3px;
-  padding: 12px 25px;
+  padding: 12px 0;
   font-size: 1em;
 }
 
 .form-btn > span {
   margin-left: 10px;
-  margin-bottom: 2px; 
+  margin-bottom: 2px;
+}
+
+.form-goback {
+  display: inline-block;
+  width: 100px;
+  color: #a8a8a8;
 }
