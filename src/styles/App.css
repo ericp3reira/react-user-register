@@ -72,7 +72,7 @@ a {
 }
 
 .Content-main {
-  margin-top: 9%;
+  margin-top: 20%;
 }
 
 .Users-list > li {
@@ -171,7 +171,6 @@ a {
 .Register-form > div {
   width: 100%;
   margin-bottom: 25px;
-
 }
 
 .Register-form > .form-section {
@@ -204,10 +203,9 @@ a {
 }
 
 .form-label {
-  font-size: 0.8em;
+  font-size: 0.9em;
   display: block;
   text-align: left;
-  margin-bottom: 10px;
   color: #4b4b4b;
 }
 
@@ -216,6 +214,7 @@ a {
   width: 100%;
   font-size: 1em;
   padding: 10px;
+  margin: 8px 0;
   border: none;
   border: 1px solid #2ac1c7;
   border-radius: 4px;
@@ -227,6 +226,18 @@ a {
 
 .form-input::placeholder {
   color: #c4c4c4;
+}
+
+.form-validation-msg {
+  display: none;
+  width: 100%;
+  font-size: 0.85em;
+  text-align: left;
+  color: #d0021b;
+}
+
+.form-validation-msg.visible {
+  display: inline-block;
 }
 
 .form-btn {
