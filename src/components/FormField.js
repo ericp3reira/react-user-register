@@ -14,24 +14,12 @@ class FormField extends Component {
     const emailRegex = new RegExp(/[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9]+(\.[a-z0-9]+)+/);
 
     if (content.match(/[a-z]+/)) {
-      switch (this.props.config.name) {
-        case 'email':
-          if (!content.match(emailRegex)) {
-            this.setState({
-              isValid: false,
-              errorMsg: 'Email is not valid'
-            });
-            return;
-          }
-        case 'repeatPwd':
-          if (content !== this.props.config.pwd) {
-            this.setState({
-              isValid: false,
-              errorMsg: 'Passwords do not match'
-            });
-            return;
-          }
-        default:
+      if (this.props.config.name === 'email' && !content.match(emailRegex)) {
+        this.setState({
+          isValid: false,
+          errorMsg: 'Email is not valid'
+        });
+        return;
       };
       this.setState({
         isValid: true,
